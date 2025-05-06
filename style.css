@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #3498db;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+/* Hover effect (animation) */
+button:hover {
+  transform: scale(1.1);
+  background-color: #2980b9;
+}
+
+/* Box that will be animated */
+#animatedDiv {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2ecc71;
+  color: white;
+  border-radius: 5px;
+  width: 200px;
+  margin: 0 auto;
+}
+
+/* Shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  50% { transform: translateX(10px); }
+  75% { transform: translateX(-10px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
